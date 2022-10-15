@@ -1,3 +1,5 @@
+/* Commenting out what I used that is not in solution */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
@@ -5,6 +7,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +20,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
+
 }
 
 input {
@@ -24,4 +30,43 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 16px;
+}
+
+.footer {
+  background: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 16px;
+}
+
+.left-links, .right-links {
+  display: flex;
+  list-style-type: none;
+  gap: 16px;
+  margin: 0;
+  /* Needed to add */
+  padding: 0;
+}
+
+a {
+  color: rgb(80, 79, 79);
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+
+  /* margin: auto; */
 }
